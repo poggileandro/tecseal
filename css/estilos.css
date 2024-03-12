@@ -85,7 +85,9 @@
     height: auto;
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
+  filter: drop-shadow(5px 5px 10px rgba(255, 165, 0, 0.5)); /* Naranja: rgba(255, 165, 0, 0.5) */
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añade transición para ambos efectos */
+
 }
 
 .texto-titulo {
@@ -100,12 +102,13 @@
     border: 2px solid orange; /* Cambia a sólido y color naranja al hacer hover */
 }
 
-
-.imagen1:hover {
-    transform: scale(1.1); /* Ajusta el valor según sea necesario para el nivel de zoom deseado */
-}
 /**************************index***********************************************/
 
 
 
-
+  
+.imagen1:hover {
+    /* Ajusta la sombra durante el hover */
+    filter: drop-shadow(8px 8px 12px rgba(255, 165, 0, 0.7)); /* Naranja: rgba(255, 165, 0, 0.7) */
+    transform: scale(1.1); /* Ajusta el valor según sea necesario para el nivel de zoom deseado */
+  }
