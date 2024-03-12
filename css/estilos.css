@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body-edit{
+    background-color: #000;
+
+}
+/**************************navbar**********************************************/
+
+.navbar {
+    background-color: #333; /* Color de fondo negro claro */
+}
+
+.navbar-brand,
+.navbar-toggler-icon {
+    color: #fff !important; /* Color de texto blanco */
+}
+
+.navbar-toggler {
+    background-color: #717171; /* Fondo blanco del botón del menú hamburguesa */
+ 
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Color de texto blanco */
+}
+
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000; /* Cambia el color del texto según tu diseño */
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+    background-color: red;
+}
+/**************************navbar**********************************************/
+
+
+/**************************index***********************************************/
+.primera-section{
+    display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+.texto-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 1rem;
+    text-align: center;
+}
+.texto1{
+    margin: .5rem;
+}
+.primera-imagen {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen1 {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto-titulo {
+    text-align: center;
+    position: relative;
+    padding: 10px; /* Ajusta según sea necesario */
+    transition: border 0.3s ease-in-out;
+    border: 2px solid transparent; /* Inicialmente transparente */
+}
+
+.texto-titulo:hover {
+    border: 2px solid orange; /* Cambia a sólido y color naranja al hacer hover */
+}
+
+
+.imagen1:hover {
+    transform: scale(1.1); /* Ajusta el valor según sea necesario para el nivel de zoom deseado */
+}
+/**************************index***********************************************/
+
+
+
+
