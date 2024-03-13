@@ -157,4 +157,12 @@
 .edit-carrusel{
     border: 5px solid #ffff;
     border-radius: 10px;
+    max-width: 350px;
 }
+
+.section-carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
