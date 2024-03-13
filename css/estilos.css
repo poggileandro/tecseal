@@ -141,6 +141,7 @@
     border-style: solid;
     border-color: #f5ff68;
     border-width: 5px;
+    
 }
 
 .carta a{
@@ -152,4 +153,8 @@
     color:yellow;
 }
 
-  
+/****************************************productos*******************************************/
+.edit-carrusel{
+    border: 10px solid yellow;
+    border-radius: 10px;
+}
