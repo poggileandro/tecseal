@@ -165,13 +165,25 @@
     justify-content: center;
 
 }
+.section-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creamos tres columnas con el mismo ancho */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-items: center; /* Centramos los elementos horizontalmente dentro de las columnas */
+    align-items: center; /* Centramos los elementos verticalmente dentro de las filas */
+    /* Otros estilos que desees aplicar */
+  }
+  
+
+
 
 .section-producto a{
     text-decoration: none;
 }
 
 
-@media only screen and (max-width: 770px) {
+
+@media only screen and (max-width: 700px) {
     .section-producto {
       display: flex;
       flex-direction: column;
@@ -180,4 +192,11 @@
       /* Otros estilos que desees aplicar */
     }
   }
+  
+  @media only screen and (max-width: 992px) {
+    .section-producto {
+      grid-template-columns: repeat(2, 1fr); /* Cambiamos a dos columnas */
+    }
+  }
+  
   
